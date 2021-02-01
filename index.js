@@ -10,7 +10,13 @@ const templates = {
   "js-webpack": {
     url: "https://github.com/LeishenKOBE/js-webpack-simple",
     downloadUrl: "https://github.com:LeishenKOBE/js-webpack-simple#master",
-    description: "下载自己的脚手架框架",
+    description: "调试代码的模板",
+  },
+  "vue3-webpack5": {
+    url: "https://github.com/LeishenKOBE/js-webpack-simple",
+    downloadUrl:
+      "https://github.com:LeishenKOBE/js-webpack-simple#vue3-webpack5",
+    description: "Webpack5和Vue3模板",
   },
 };
 program
@@ -42,7 +48,7 @@ if (program.opts() && program.opts().init) {
         type: "list",
         name: "template",
         message: "选择其中一个作为项目模版",
-        choices: ["js-webpack (简单js开发模板)"],
+        choices: ["js-webpack (简单js开发模板)", "vue3-webpack5 模板"],
       },
     ])
     .then((answers) => {
