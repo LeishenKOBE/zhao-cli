@@ -28,6 +28,11 @@ const templates = {
     downloadUrl: "https://github.com:LeishenKOBE/js-webpack-simple#vite-module",
     description: "尤大神的vite模板",
   },
+  "vite-js": {
+    url: "https://github.com/LeishenKOBE/js-webpack-simple",
+    downloadUrl: "https://github.com:LeishenKOBE/js-webpack-simple#vite-js",
+    description: "简单的vite开发js模板",
+  },
 };
 program
   .version(packageData.version)
@@ -63,6 +68,7 @@ if (program.opts() && program.opts().init) {
           "vue3-webpack5 模板",
           "vue-module 组件库模板",
           "vite-vue 模板",
+          "vite-js 模板",
         ],
       },
     ])
