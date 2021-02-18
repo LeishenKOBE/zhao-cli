@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require('fs');
 
 module.exports = function checkName(projectName) {
   return new Promise((resolve, reject) => {
