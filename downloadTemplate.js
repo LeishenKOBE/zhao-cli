@@ -3,7 +3,7 @@ const ora = require('ora');
 const download = require('download-git-repo');
 
 module.exports = function downloadTemplate(gitUrl, projectName) {
-  const spinner = ora('download template......').start();
+  const spinner = ora('下载模板中...').start();
 
   return new Promise((resolve, reject) => {
     download(

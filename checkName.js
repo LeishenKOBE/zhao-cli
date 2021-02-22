@@ -7,7 +7,7 @@ module.exports = function checkName(projectName) {
         return reject(err);
       }
       if (data.includes(projectName)) {
-        return reject(new Error(`${projectName} already exists!`));
+        return reject(new Error(`${projectName} 已经存在!`));
       }
       resolve();
     });
