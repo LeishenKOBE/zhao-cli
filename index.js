@@ -38,6 +38,11 @@ const templates = {
     downloadUrl: 'https://github.com:LeishenKOBE/js-webpack-simple#vite-vue2',
     description: 'vue2版本的vite环境',
   },
+  'vue-plugin': {
+    url: 'https://github.com/LeishenKOBE/js-webpack-simple',
+    downloadUrl: 'https://github.com:LeishenKOBE/js-webpack-simple#vue-plugin',
+    description: 'vue2插件模板',
+  },
 };
 program
   .version(packageData.version)
@@ -75,6 +80,7 @@ if (program.opts() && program.opts().init) {
           'vite-vue 模板',
           'vite-js 模板',
           'vite-vue2 模板',
+          'vue-plugin 插件模板',
         ],
       },
     ])
