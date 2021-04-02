@@ -43,6 +43,11 @@ const templates = {
     downloadUrl: "https://bitbucket.org:shidongzhao/my-simple-repo#vue-plugin",
     description: "vue2插件模板",
   },
+  "vite-svelte": {
+    url: "https://bitbucket.org/shidongzhao/my-simple-repo",
+    downloadUrl: "https://bitbucket.org:shidongzhao/my-simple-repo#vite-svelte",
+    description: "vite-svelte模板",
+  },
 };
 program
   .version(packageData.version)
@@ -81,6 +86,7 @@ if (program.opts() && program.opts().init) {
           "vite-js 模板",
           "vite-vue2 模板",
           "vue-plugin 插件模板",
+          "vite-svelte 模板",
         ],
       },
     ])
